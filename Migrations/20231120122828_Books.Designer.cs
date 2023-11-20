@@ -4,6 +4,7 @@ using Lazar_Jusztina_Laborator2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lazar_Jusztina_Laborator2.Migrations
 {
     [DbContext(typeof(Lazar_Jusztina_Laborator2Context))]
-    partial class Lazar_Jusztina_Laborator2ContextModelSnapshot : ModelSnapshot
+    [Migration("20231120122828_Books")]
+    partial class Books
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

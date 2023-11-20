@@ -34,10 +34,10 @@ namespace Lazar_Jusztina_Laborator2.Pages.Publishers
            .ToListAsync();
             if (id != null)
             {
-               PublisherID = id.Value _
+                PublisherID = id.Value;
                Publisher publisher = PublisherData.Publishers
                .Where(i => i.ID == id.Value).Single();
-                PublisherData.Books = publisher.books;
+                PublisherData.Books = publisher.Books;
             }
         }
 
